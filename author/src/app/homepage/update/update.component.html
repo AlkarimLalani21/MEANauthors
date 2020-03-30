@@ -1,0 +1,14 @@
+<div class="update-container">
+  <div class="authors-header">  
+     <button [routerLink]="['']" (click)="goHome()">Home</button>
+   <form (submit)="updateAuthor()">
+     <input type="text" name="name" [(ngModel)]="author.name" placeholder="{{author.name}}" required minglength="3">
+     <input type="text" name="quotes" [(ngModel)]="author.quotes" placeholder="{{author.quotes}}" required minglength="3">
+     <input type="submit" value="Update">
+   </form>
+   <button (click)="handleCancelClick()">Cancel</button>
+  </div>
+  <div *ngFor="let key of error">
+    <h1>{{key}}</h1>
+  </div>
+</div>

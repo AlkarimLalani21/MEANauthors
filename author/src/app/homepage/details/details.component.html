@@ -1,0 +1,11 @@
+<div class="details-container">
+    <div class="authors-header">  
+       <button [routerLink]="['']" (click)="goHome()">Home</button>
+      <h2>Details about: {{author.name}}</h2>  
+    </div>
+    <div class="authors-content">
+      <h3>Quotes of author: </h3> 
+      <h4> {{author.quotes}}</h4>
+      <button [routerLink]="['/']" (click)="delete(id)">Delete</button>
+    </div>
+  </div>

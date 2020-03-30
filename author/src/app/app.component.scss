@@ -1,0 +1,16 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(85, 85, 20);
+    padding-bottom: 50px;
+    /* height: 100vh; */
+  }
+  
+  .main-header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 150px;
+    background-color: rgb(101, 214, 45);
+    border-bottom: 2px solid black;
+  }
